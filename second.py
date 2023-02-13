@@ -2,13 +2,15 @@
 # Задание 1
 a = int(input("Введите количество км в первый день "))
 b = int(input("Введите желаемый результат в км "))
-km_day = 0
-count = 0
+km_day = a
+count = 1
+
 while (km_day <=b):
-    km_day = (a+a*0.1)
+    print(f"{count}-й день - {round(km_day, 2)}")
+    km_day = km_day+km_day*0.1
     count+=1
 
-print(km_day)
+print(f"через {count} дней будет достигнут результат не менее {b} км")
 
 
 
