@@ -8,13 +8,19 @@
 # Введите целые числа через пробел: 1 2 3
 # Результат: 2 1 3
 
-li = [2, 7, 10, 4, 3, 1, 9]
-elem = 0
+li = input ("Введите целые числа через пробел: ")
+li = li.split(' ')
+i = 0
+for element in li:
+   element = int(li[i])
 
+
+elem = 0
 while(elem < len(li)-1):
     a = li[elem]
     li[elem] = li[elem+1]
     li[elem+1] = a
+
     elem+=2
 
-print(li)
+print(*li)
