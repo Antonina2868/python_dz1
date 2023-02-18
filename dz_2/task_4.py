@@ -11,8 +11,9 @@
 li = input ("Введите целые числа через пробел: ")
 li = li.split(' ')
 i = 0
-for element in li:
-   element = int(li[i])
+
+for i in range(len(li)):
+   li[i] = int(li[i])
 
 
 elem = 0
