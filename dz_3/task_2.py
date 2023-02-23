@@ -13,11 +13,17 @@
 # Набор натуральных чисел можно задать непосредственно в коде,
 # например, my_list = [7, 5, 3, 3, 2].
 
-n = 4
+n = int(input("Введите элемент рейтинга: "))
 new_list = [7, 5, 3, 3, 2]
 i = 0
+
 while i < len(new_list):
     if n >= new_list[i]:
+        new_list.insert(i, n)
+        break
+    elif n <= new_list[-1]:
         new_list.append(n)
-        i+=1
-        print(new_list)
+        break
+    i += 1
+
+print('Updated list:', new_list)
