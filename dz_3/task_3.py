@@ -19,20 +19,21 @@
 # “количества”: [5, 2, 7],
 # “ед”: [“шт.”]
 # }
+products = []
 quest = "Y"
-while quest == "Y":
+while quest.lower() == "y":
     n = int(input("Введите номер товара: "))
     prod_name = input("Введите название товара: ")
     prod_price = int(input("Введите стоимость товара: "))
     prod_quantity = int(input("Введите количество товара: "))
     prod_measure = input("Введите единицу измерения товара: ")
 
-    products =  [(n, {
+    products.append((n, {
         "название": prod_name,
         "цена": prod_price,
         "количество": prod_quantity,
         "ед": prod_measure,
-    })]
+    }))
     quest = input("Добавить товар?(Y/N)")
 
 print(products)
