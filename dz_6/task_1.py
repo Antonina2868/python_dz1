@@ -9,11 +9,17 @@ def calc(first, step, n):
 a1 = int(input("Введите первое число: "))
 d_step = int(input("Введите шаг арифметической прогрессии: "))
 el_num = int(input("Введите количество цифр: "))
-i = 1
+# i = 1
+# arr = []
+# while (i <= el_num):
+#     arr.append(calc(a1,d_step,i))
+#     i += 1
+# print(arr)
+
 arr = []
-while (i <= el_num):
-    arr.append(calc(a1,d_step,i))
-    i += 1
+for i in range(el_num):
+    arr.append(calc(a1, d_step, i+1))
 print(arr)
+
 
 
