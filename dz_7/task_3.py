@@ -9,9 +9,9 @@
 # П.С. попытайтесь добить вывода информации о сотруднике также через перегрузку str
 # # str(self) - вызывается функциями str, print и format. Возвращает строковое представление объекта.
 
-class Worker():
+class Worker:
 
-    def __init__(self,name, surname, position, wage, bonus):
+    def __init__(self, name, surname, position, wage, bonus):
         self.name = name
         self.surname = surname
         self.position = position
